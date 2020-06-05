@@ -38,3 +38,12 @@ val_mask_generator = val_datagen.flow_from_directory (
 
 train_generator = zip(train_image_generator, train_mask_generator)
 val_generator = zip(val_image_generator, val_mask_generator)
+
+test_generator = val_datagen.flow_from_directory(
+    './data/test_imgs',
+    target_size=(256, 256),
+    color_mode="rgb",
+    class_mode = None,
+    batch_size = 1, 
+    interpolation='nearest'
+)
