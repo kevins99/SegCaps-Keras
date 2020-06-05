@@ -2,7 +2,7 @@ from gen_map import gen_map
 import os
 import cv2
 
-DIR_LIST = ['./images']
+DIR_LIST = ['./data_example/train_imgs/train', './data_example/test_imgs/test', './data_example/val_imgs/val']
 
 dirlist = []
 filelist = []
